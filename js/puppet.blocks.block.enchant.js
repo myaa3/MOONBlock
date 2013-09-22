@@ -1162,8 +1162,10 @@ enchant.block.blocks.game.SEBlock = enchant.Class.create(enchant.block.Block, {
 enchant.block.blocks.game.BackgroundBlock = enchant.Class.create(enchant.block.Block, {
     initialize: function() {
         enchant.block.Block.call(this, '#ffcc33');
+        this.setConnectTarget('evalable');
         this.addLabel(RES('blocks.BackgroundBlock.name'));
         this.addSelectForm(enchant.ENV.BG_IMAGE_DICTIONARY, 'bgsrc');
+        this.iteratize();
         this.script = 'enchant.puppet.Theatre.changeScreen("<% bgsrc %>");';
     }
 });

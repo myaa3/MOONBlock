@@ -377,7 +377,7 @@ entry
         core.pushScene(scene);
 
         var akbar = new ActionKitBar();
-        akbar.box[RES('blocks.categories.game')].removeItem('BackgroundBlock');
+//        akbar.box[RES('blocks.categories.game')].removeItem('BackgroundBlock');
         akbar.box.JavaScript.removeItem('BlackBlock');
         akbar.x = 8;
         akbar.y = uiMargin;
